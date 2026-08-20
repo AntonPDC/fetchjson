@@ -17,14 +17,14 @@ axios.get(url).then(response => {
     const completed = todo.completed
 
 
-    console.log(logTodo(id, title, completed))
+    logTodo(id, title, completed)
 
 })
 
 
 const logTodo = (id: number, title: string, completed: boolean) => {
     console.log(`
-    The todo with the ID: ${id}
+    The todo with the id: ${id}
     With the title: ${title}
     Is it completed? ${completed}
 `)
